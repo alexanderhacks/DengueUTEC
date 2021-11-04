@@ -1,0 +1,68 @@
+---
+title: Análisis del nivel de propagación del dengue en las ciudades San Juan e Iquitos
+  durante los años 1990-2010
+author: "Alexander Morales Panitz"
+output: html_document
+---
+### Tabla de Contenidos
+
+### Introducción
+En la década de los ‘90, un problema sanitario azotaba a las áreas tropicales del Perú. Esto se resumía en la aparición de una nueva enfermedad conocida como el dengue, que se transmite por el mosquito Aedes aegypti.
+
+El dengue se había detectado en el Perú hace varios siglos atrás; sin embargo la reintroducción del virus africano se detectó en Loreto en el año 1984, y sus 4 serotipos se lograron extender a lo largo del país. Entre las ciudades más afectadas, que eran principalmente selváticas, se encontraban la capital del departamento, Iquitos, y San Juan.
+
+La emergencia del dengue ha sido un tema epidemiológico de interés, pues pese a haber creído en varias ocasiones que el virus había desaparecido, hasta la actualidad aún se siguen reportando casos. Por diversas razones como la ausencia de agua, el cambio climático y el crecimiento poblacional, se cree que sigue reapareciendo, por lo que es importante prevenir y conocer más sobre los datos que ha ido dejando esta enfermedad. 
+
+Por ello, es que se busca predecir los casos totales de etiqueta para cada uno en el conjunto de prueba a partir de parámetros como la ciudad, el año, la semana del año, etc. En este caso, se tienen como ciudades de evaluación a San Juan e Iquitos (Perú) con datos de prueba para cada una que se tienen desde el año 1990 hasta el 2010. 
+
+En ese sentido, una predicción de ambas ciudades a partir de los datos obtenidos se realizará. Estos datos procesados se concatenarán para ambas ciudades. Cabe mencionar que el conjunto de prueba será una reserva de futuro pura, que en otras palabras hace referencia a que  los datos de prueba son secuenciales y no se superponen con ninguno de los datos de entrenamiento. Igualmente, los valores faltantes se rellenarán como “NA”.
+
+### Descripción del proyecto
+
+El proyecto contempla el análisis de distintas variables para la obtención de gráficas y la interpretación de los patrones que se observan en las mismas para la variación de factores que han propiciado la aparición del dengue entre la décadas de los noventa y el año 2010. 
+
+Para conocer la situación en dicho período en la selva peruana, se cuenta con los datos ambientales recopilados por varias agencias del gobierno federal de los EE. UU. Estos han sido proporcionados por los Centros para el Control y la Prevención de Enfermedades, así como por la Administración Nacional Oceánica y Atmosférica del Departamento de Comercio de EE. UU. 
+
+Asimismo, las distintas fuentes, por apoyar la iniciativa Predict the Next Pandemic Initiative (“Predice la Siguiente Pandemia”), han proporcionado la información necesaria en colaboración con el gobierno peruano y distintas universidades americanas. Igualmente, los datos climáticos y ambientales fueron brindados por la Administración Nacional Oceánica y Atmosférica (NOAA, por sus siglas en inglés).
+
+Por otro lado, los datos se encuentran disponibles en la plataforma Driven Data. Además, fueron proporcionados para los estudiantes o investigadores que desean resolver la pregunta del estudio. 
+
+La interrogante que se pretende responder abarca desde los efectos causados por el Dengue en la población de Iquitos y San Juan, como los patrones presentados de acuerdo a la variabilidad de condiciones presentadas en cada intervalo de tiempo. De esta manera, gracias a los datos recolectados de las condiciones ambientales como la temperatura, precipitación, grado de vegetación, y entre otras más, responderemos a cada una de estas interrogantes usando técnicas estadísticas vistas a lo largo del curso.
+
+### Justificación
+
+Como se ha mencionado previamente, el dengue ha afectado gravemente a la población peruana. No solo es un problema epidemiológico que ha acabado con bastantes vidas en la antigüedad, sino que en el presente año, pese a haber una tasa de letalidad de 0,06 muertes por cada 100 casos, se han llegado a reportar más de 12,000 casos (MINSA, 2021).
+
+De esta forma, se comprueba que hay un sector de la población nacional que se muestra interesada en conocer más sobre los efectos del dengue. Es importante no solo que se conozca para saber los efectos de años y décadas anteriores, sino también para que se tome consciencia de las precauciones necesarias para evitar que cifras tan altas sigan reportándose.
+
+Por consecuencia, se justifica la realización del presente proyecto por la necesidad actual que existe de generar conciencia e informar a la población sobre los efectos del dengue en décadas anteriores, y las condiciones que han ocasionado su reintroducción al territorio peruano.  
+
+### Planteamiento del problema
+En base a los problemas causados por el dengue, lo que se busca en este proyecto es demostrar el impacto que tuvo en las ciudades de Iquitos y San Juan. ¿Cuáles fueron las principales causas de la propagación del dengue en estas ciudades? ¿Se debe a la alta vegetación que hay alrededor de esas zonas,la temperatura o la humedad?
+### Datos recolectados
+La información recolectada fue extraída de la página DrivenData, específicamente del concurso DengueAI. La diferencia es que nosotros queremos darle un enfoque distinto. Usaremos los datos proporcionados dándole un enfoque descriptivo y más adelante inferencial. Para mayor información visitar la plataforma [DrivenData](https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/82/).
+
+### Descripción de variables de datos
+Dado que es un estudio sanitario y medioambiental, requerimos variables que tengan relación con cada una de estas. Para la recolección de información de tomaron las fuentes del [Centers for Disease Control and Prevention](https://www.cdc.gov/) y  [National Oceanic and Atmospheric Administration](https://www.noaa.gov/)
+A continuación se detallará cada una de las variables, considerando su nombre en el dataset, tipo de dato y restricciones de cada una.
+
+| Variable        | Tipo de Variable  | Restricciones                               |
+|-----------------|-------------------|---------------------------------------------|
+| city            | Categórica        | Solo puede ser sj (San Juan) o iq (Iquitos) |
+| year            | Numérica discreta | Entre 1990-2010                             |
+| weekofyear      | Numérica discreta | Entre 1 - 52 semanas del año                |
+| week_start_date | Numérica          | Fecha exacta de la medición                 |
+| ndvi_*          | Numérica continua | Entre -1 y 1                                |
+|    
+## Descriptores numéricos
+## Descriptores gráficos
+
+## Análisis de datos
+
+## Una visión a mayor detalle de los datos
+
+## Modelos de variable aleatoria
+
+## Hipótesis sobr el comportamiento de los patrones
+
+## Relaciones entre las varibles mediante medidas de 
